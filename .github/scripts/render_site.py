@@ -357,3 +357,70 @@ if "/* Text search UI v1 */" not in v:
 """
  css.write_text(v,encoding="utf-8")
 print("TEXT_SEARCH_READY:",len(text_records),"archival documents indexed")
+
+
+# HISTORIC_POEMS_V1: recover and typeset the complete eleven-document
+# verse collection which the old site displayed through <object> embeds.
+poem_ids=["p0","p00"]+["p"+str(n) for n in range(1,10)]
+poem_labels={"p0":"تولد","p00":"زندگی‌نامهٔ منظوم"}
+for n in range(1,10):poem_labels["p"+str(n)]="قطعهٔ "+str(n)
+poem_sections=[]
+poem_count=0
+for ident in poem_ids:
+ key="davoud2/poems/"+ident+".html"
+ raw=ROOT/"source-original"/key
+ if not raw.exists():continue
+ src=raw.read_text(encoding="utf-8",errors="replace")
+ verses=[]
+ for part in re.findall(r'<p\b[^>]*>([\s\S]*?)</p>',src,flags=re.I):
+  line=html.unescape(re.sub(r'<[^>]+>',"",part)).strip()
+  if line:verses.append(line)
+ intro_match=re.search(r'<h4\b[^>]*>([\s\S]*?)</h4>',src,flags=re.I)
+ intro=(html.unescape(re.sub(r'<[^>]+>',"",intro_match.group(1))).strip() if intro_match else "")
+ label=poem_labels[ident]
+ if not verses:continue
+ poem_count+=1
+ verse_html=''.join('<p>'+e(v)+'</p>' for v in verses)
+ note=('<p class="poem-intro">'+e(intro)+'</p>' if intro else '')
+ poem_sections.append('<details class="poem-card" id="'+ident+'"'+(' open' if ident=="p0" else '')+'><summary>'+e(label)+'<span>'+str(len(verses))+' سطر</span></summary>'+note+'<div class="poem-lines">'+verse_html+'</div><p class="poem-standalone"><a href="poems/'+ident+'.html">صفحهٔ مستقل این شعر ←</a></p></details>')
+ # Recreate a clean, standalone reading page at the original poem URL.
+ pbody='''<header class="header"><div class="container nav-wrap"><a class="logo" href="../../"><span class="logo-mark">ا‌ن</span><span><strong>خاندان افشار نادری</strong><small>آرشیو تاریخ و تبار خانواده</small></span></a><nav><a href="../../">خانه</a><a href="../dpoems.html">اشعار داود میرزا</a><a href="../../gallery.html#g3">آلبوم تصاویر</a></nav></div></header>
+<main class="container legacy-layout"><div class="legacy-breadcrumb"><a href="../dpoems.html">اشعار داود میرزا</a> / '''+e(label)+'''</div>
+<div class="legacy-heading"><div class="kicker dark">متن آرشیوی</div><h1>'''+e(label)+''' — داود میرزا</h1></div>
+<article class="legacy-document poem-original">'''+note+'<div class="poem-lines">'+verse_html+'''</div></article>
+<p class="legacy-provenance">متن از سند HTML اصلی؛ نسخهٔ خام در source-original محفوظ است.</p><div class="diagram-links"><a href="../dpoems.html">همهٔ شعرها ←</a><a href="../../gallery.html#g3">گالری تصاویر ←</a></div></main><footer class="footer"><div class="container footer-bottom">خاندان افشار نادری</div></footer>'''
+ ppage='<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="description" content="متن شعر داود میرزا افشار نادری"><link rel="stylesheet" href="../../styles.css"><title>'+e(label)+' | اشعار داود میرزا افشار نادری</title></head><body>'+pbody+'</body></html>'
+ store(key,ppage)
+ # Extend full-text search without indexing private scans.
+ text_records.append({"title":"اشعار داود میرزا — "+label,"description":"متن شعر","path":"./"+key,"content":((intro+" " if intro else "")+" ".join(verses))[:50000]})
+if poem_sections:
+ page='''<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="../styles.css"><title>اشعار داود میرزا | خاندان افشار نادری</title></head><body>
+<header class="header"><div class="container nav-wrap"><a href="../" class="logo"><span class="logo-mark">ا‌ن</span><span><strong>خاندان افشار نادری</strong><small>آرشیو تاریخ و تبار خانواده</small></span></a><nav><a href="../">خانه</a><a href="../archive.html">آرشیو</a><a href="../gallery.html#g3">گالری</a></nav></div></header>
+<main><section class="subhero"><div class="container"><div class="kicker">متن‌های بازیابی‌شده از آرشیو اولیه</div><h1>اشعار داود میرزا</h1><p>مجموعهٔ کامل شعرها و زندگی‌نامهٔ منظوم، بدون نیاز به افزونه‌های قدیمی و فایل‌های توکار.</p></div></section>
+<section class="section container"><div class="kicker dark">یازده سند مستقل</div><h2>شعرها را بخوانید</h2><p class="bodycopy">با انتخاب عنوان هر قطعه، متن کامل آن نمایش داده می‌شود. صورت اصلی هر شعر، با همان واژگان و ترتیب بیت‌ها، در فایل‌های اولیه محفوظ است.</p>
+<div class="poem-jump">'''+''.join('<a href="#'+ident+'">'+e(poem_labels[ident])+'</a>' for ident in poem_ids if (ROOT/"source-original/davoud2/poems"/(ident+".html")).exists())+'''</div>
+<div class="poems-list">'''+''.join(poem_sections)+'''</div><div class="family-downloads"><a href="../gallery.html#g3">آلبوم داود میرزا ←</a><a href="davoudm2.html">صفحهٔ زندگی‌نامه ←</a></div></section></main>
+<footer class="footer"><div class="container footer-bottom"><span>خاندان افشار نادری · آرشیو تاریخی</span><a href="../archive.html">بازگشت به آرشیو ←</a></div></footer>
+<script>if(location.hash){let el=document.getElementById(location.hash.slice(1));if(el&&el.tagName==="DETAILS")el.open=true}</script></body></html>'''
+ store("davoud2/dpoems.html",page)
+ store("search-index.json",json.dumps(text_records,ensure_ascii=False,separators=(",",":")))
+css=ROOT/"styles.css"
+v=css.read_text(encoding="utf-8")
+if "/* Restored historical poems v1 */" not in v:
+ v+="""
+/* Restored historical poems v1 */
+.poem-jump{display:flex;flex-wrap:wrap;gap:8px;margin:25px 0}
+.poem-jump a{border:1px solid #c7b9a3;padding:9px 13px;font-size:12px}
+.poem-card{background:white;border:1px solid #e4ded1;margin:12px 0}
+.poem-card summary{font-size:16px;font-weight:700;padding:18px 23px;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.poem-card summary span{font-size:11px;color:#988773;font-weight:400}
+.poem-card[open] summary{border-bottom:1px solid #eee9df;background:#f4f0e7}
+.poem-intro{font-size:13px;color:#62716b;text-align:center;margin:18px auto;max-width:620px}
+.poem-lines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px;max-width:810px;margin:22px auto;align-items:baseline}
+.poem-lines p{font-size:15px;line-height:2.1;padding:4px;margin:0;text-align:center;min-width:0}
+.poem-standalone{padding:0 20px 20px;text-align:center;font-size:12px;color:#846642}
+.poem-original{overflow-wrap:break-word}
+@media(max-width:600px){.poem-lines{grid-template-columns:1fr;gap:1px}.poem-lines p{font-size:14px}.poem-card summary{padding:15px}}
+"""
+ css.write_text(v,encoding="utf-8")
+print("HISTORIC_POEMS_RENDERED",poem_count,"standalone poems; full-text index",len(text_records))

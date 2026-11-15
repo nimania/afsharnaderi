@@ -35,3 +35,13 @@
 .legacy-next a{font-weight:700;color:#81623d}
 .archive-grid .resource[hidden]{display:none}
 @media(max-width:720px){.legacy-document{padding:15px}.legacy-document table{display:block;overflow-x:auto}.legacy-document img{object-fit:contain}.legacy-layout{padding-top:20px}}
+
+/* Restored family viewer */
+.legacy-document .menu-container{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}
+.legacy-document .menu-container>div{border:1px solid #e5e0d3;background:#f6f4ee;padding:8px 14px;font-size:12px}
+.legacy-document .menu-container a{color:#654d2c;text-decoration:none}
+.legacy-document .iframe-container{width:100%;min-height:640px}
+.legacy-document iframe[name="frmDrawing"]{width:100%;height:min(75vh,850px);min-height:640px;border:1px solid #d8d0c3;background:#fff}
+.legacy-document img[usemap]{max-width:none!important}
+.legacy-document .image-gallery{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px}
+@media(max-width:720px){.legacy-document .iframe-container{min-height:500px}.legacy-document iframe[name="frmDrawing"]{height:66vh;min-height:490px}}

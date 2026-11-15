@@ -32,6 +32,9 @@ jobs:
       - name: Import historical documents, pages and media once
         if: ${{ hashFiles('site/IMPORT_MANIFEST.json') == '' }}
         run: python .github/scripts/import_archive.py
+      - name: Postprocess imported historical pages
+        if: ${{ hashFiles('site/IMPORT_MANIFEST.json') != '' }}
+        run: python .github/scripts/postprocess.py
       - name: Check in imported public archive
         run: |
           if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard site)" ]; then

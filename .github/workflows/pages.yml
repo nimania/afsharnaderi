@@ -35,6 +35,9 @@ jobs:
       - name: Postprocess imported historical pages
         if: ${{ hashFiles('site/IMPORT_MANIFEST.json') != '' }}
         run: python .github/scripts/postprocess.py
+      - name: Build integrated local archives and galleries
+        if: ${{ hashFiles('site/IMPORT_MANIFEST.json') != '' }}
+        run: python .github/scripts/render_site.py
       - name: Check in imported public archive
         run: |
           if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard site)" ]; then

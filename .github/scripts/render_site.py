@@ -424,3 +424,70 @@ if "/* Restored historical poems v1 */" not in v:
 """
  css.write_text(v,encoding="utf-8")
 print("HISTORIC_POEMS_RENDERED",poem_count,"standalone poems; full-text index",len(text_records))
+
+
+# COMPREHENSIVE_CATALOG_V1: rebuild the master catalog after supplementary imports.
+from pathlib import PurePosixPath
+all_names={
+ "index.html":"معرفی اولیهٔ خاندان",
+ "tabaar/tabaar1.html":"نمودار کامل تبارنامه",
+ "docs/kashkoul.html":"مدارک و تولدهای ثبت‌شده",
+ "ismail/ismail.html":"اسماعیل میرزا",
+ "davoud2/davoudm2.html":"داود میرزا دوم",
+ "davoud2/dpoems.html":"اشعار داود میرزا",
+ "davoud2/dslide.html":"آلبوم داود میرزا",
+ "drghan/drghan.html":"دکتر غلامرضا افشار نادری",
+ "drghan/index.html":"گالری آثار دکتر غلامرضا",
+ "drnader/drnader.html":"دکتر نادر افشار نادری",
+}
+for i,name in enumerate(names,1):
+ all_names["tabaar/png_"+str(i)+".htm"]="نمودار شاخهٔ "+name
+for poem_id,poem_name in poem_labels.items():
+ all_names["davoud2/poems/"+poem_id+".html"]="شعر داود میرزا — "+poem_name
+def kind_of(path):
+ if path.startswith("tabaar/"):return "تبارنامه"
+ if path.startswith("davoud2/poems/") or path.endswith("dpoems.html"):return "اشعار"
+ if path.endswith(".pdf") or path.startswith("docs/"):return "اسناد"
+ if path.endswith("dslide.html") or path=="drghan/index.html":return "گالری"
+ return "زندگی‌نامه"
+list_items=[]
+for path in sorted(pages):
+ title=all_names.get(path,Path(path).stem)
+ kind=kind_of(path)
+ link="original/index.html" if path=="index.html" else path
+ list_items.append(card(title,link,kind,"نسخهٔ بازسازی‌شده از پروندهٔ اولیه"))
+for path in sorted(a for a in assets if a.lower().endswith(".pdf")):
+ title="شجره‌نامهٔ خاندان (PDF)" if "shajareh" in path else "تاریخچهٔ خاندان افشار (PDF)"
+ list_items.append(card(title,path,"اسناد","نسخهٔ اصلی سند برای مطالعه یا دریافت"))
+list_items.append(card("گالری کامل تصاویر و آثار","gallery.html","گالری","تصاویر منتقل‌شده به مخزن"))
+list_items.append(card("جست‌وجو در متن پرونده‌ها","search.html","جست‌وجو","جست‌وجو در زندگی‌نامه‌ها و اشعار"))
+catalog_body='''<section class="section container"><div class="section-head"><div><div class="kicker dark">فهرست کامل</div><h2>تمام صفحات و اسناد اصلی</h2></div><a class="see-all" href="./gallery.html">گالری عکس‌ها ←</a></div>
+<p class="bodycopy">این فهرست شامل تمام صفحات HTML بازیابی‌شده و نسخه‌های PDF است. فایل‌های تصویری در گالری و تبارنامه قابل مشاهده‌اند؛ فایل‌های فنی مانند CSS و JavaScript در اینجا نمایش داده نمی‌شوند.</p>
+<div class="archive-controls"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" aria-label="جست‌وجو در منابع" placeholder="جست‌وجو در عنوان پرونده..."></label>
+<label><span class="sr-only">نوع محتوا</span><select id="category"><option value="all">همهٔ موارد</option><option value="زندگی‌نامه">زندگی‌نامه</option><option value="تبارنامه">تبارنامه</option><option value="اشعار">اشعار</option><option value="اسناد">اسناد</option><option value="گالری">گالری</option><option value="جست‌وجو">جست‌وجو</option></select></label></div>
+<div id="archive-list" class="archive-grid">'''+''.join(list_items)+'''</div><p id="no-results" class="no-results" hidden>پرونده‌ای پیدا نشد.</p>
+<div class="editorial"><strong>منابع و حفظ اصالت</strong><p>نسخهٔ خام صفحات در مخزن گیت‌هاب نگهداری می‌شود و تصاویر اصلی تغییر داده نشده‌اند. اطلاعات باید پیش از جایگزینی دامنهٔ اصلی از نظر حریم خصوصی و دقت تاریخی بررسی شوند.</p></div></section>'''
+store("legacy-index.html",shell("فهرست جامع منابع","تمام زندگی‌نامه‌ها، صفحه‌های تاریخی، شعرها و فایل‌های PDF انتقال‌یافته.","فهرست کامل آرشیو",catalog_body,"archive"))
+
+# Replace the two legacy JavaScript sliders with media galleries at SAME URLs.
+def native_album(local,title,description,prefix,related_path,related_title):
+ files=sorted(x for x in assets if x.startswith(prefix) and x.lower().endswith((".jpg",".jpeg",".png",".gif",".webp")))
+ rel_root=posixpath.relpath("index.html",posixpath.dirname(local))
+ rel_archive=posixpath.relpath("archive.html",posixpath.dirname(local))
+ rel_gallery=posixpath.relpath("gallery.html",posixpath.dirname(local))
+ related=posixpath.relpath(related_path,posixpath.dirname(local))
+ items=[]
+ for f in files:
+  link=quote(posixpath.relpath(f,posixpath.dirname(local)),safe="/")
+  label=Path(f).stem.replace("_"," ").replace("-"," ")
+  items.append('<a href="'+link+'" target="_blank" rel="noopener" class="gallery-tile"><img src="'+link+'" loading="lazy" alt="'+e(label)+'"><span class="gallery-caption">'+e(label)+'</span></a>')
+ content='''<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="../styles.css"><title>'''+e(title)+''' | خاندان افشار نادری</title></head><body>
+<header class="header"><div class="container nav-wrap"><a href="'''+rel_root+'''" class="logo"><span class="logo-mark">ا‌ن</span><span><strong>خاندان افشار نادری</strong><small>آرشیو تاریخ و تبار خانواده</small></span></a><nav><a href="'''+rel_root+'''">خانه</a><a href="'''+rel_archive+'''">آرشیو</a><a href="'''+rel_gallery+'''">گالری</a></nav></div></header>
+<main><section class="subhero"><div class="container"><div class="kicker">آرشیو تصاویر</div><h1>'''+e(title)+'''</h1><p>'''+e(description)+'''</p></div></section><section class="section container"><div class="gallery-heading"><h2>تصاویر اصلی</h2><span>'''+str(len(files))+''' تصویر</span></div>
+<div class="gallery-grid">'''+''.join(items)+'''</div><div class="family-downloads"><a href="'''+related+'''">'''+e(related_title)+''' ←</a><a href="'''+rel_gallery+'''">مشاهدهٔ تمام گالری‌ها ←</a></div></section></main>
+<footer class="footer"><div class="container footer-bottom">خاندان افشار نادری · نسخهٔ آرشیوی</div></footer></body></html>'''
+ store(local,content)
+ return len(files)
+d_count=native_album("davoud2/dslide.html","آلبوم تصاویر داود میرزا","تصاویر خانوادگی در نسخهٔ اصلی تارنما","davoud2/photos/","davoud2/dpoems.html","اشعار داود میرزا")
+g_count=native_album("drghan/index.html","آثار دکتر غلامرضا افشار نادری","تصاویر آثار و تألیفات منتشرشده در آرشیو اصلی","drghan/data1/images/","drghan/drghan.html","زندگی‌نامهٔ دکتر غلامرضا")
+print("MASTER_CATALOG",len(list_items),"items; albums",d_count,g_count)

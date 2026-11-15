@@ -1,35 +1,26 @@
 # خاندان افشار نادری — آرشیو تاریخ و تبار
 
-نسخهٔ آزمایشی بازسازی‌شده: https://nimania.github.io/afsharnaderi/
+نسخهٔ آزمایشی: https://nimania.github.io/afsharnaderi/
 
-## وضعیت انتقال
+## انتقال انجام‌شده
+- 39 صفحهٔ HTML از سایت اصلی، شامل ۱۸ صفحهٔ تبارنامه و ۱۱ متن شعر جداگانه
+- 139 فایل PDF، تصویر و فایل وابسته
+- 23.3 مگابایت دادهٔ دریافت‌شده
+- 2 فایل با پاسخ 404 از مبدأ
 
-در ۱۵ نوامبر ۲۰۲۶ از سایت اصلی afsharnaderi.com موارد زیر دریافت و در همین مخزن ذخیره شده‌اند:
+## صفحه‌های اصلی
+- [آرشیو](https://nimania.github.io/afsharnaderi/archive.html)
+- [تبارنامهٔ ۱۸ شاخه](https://nimania.github.io/afsharnaderi/family.html)
+- [گالری تصاویر](https://nimania.github.io/afsharnaderi/gallery.html)
+- [اشعار داود میرزا](https://nimania.github.io/afsharnaderi/davoud2/dpoems.html)
+- [جست‌وجوی متن](https://nimania.github.io/afsharnaderi/search.html)
+- [فهرست جامع](https://nimania.github.io/afsharnaderi/legacy-index.html)
 
-- **28 صفحهٔ HTML**، شامل ۱۸ نمودار جداگانهٔ تبارنامه
-- **139 فایل** شامل PDFها، عکس‌ها و فایل‌های وابسته
-- **23.3 مگابایت** محتوای دریافتی
-- **2 خطای دریافت** برای فایل‌هایی که در سایت اولیه پاسخ 404 داده‌اند
+## اسناد و نگهداری
+- فهرست فایل‌ها، خطاها و SHA-256 اسناد: [IMPORT_MANIFEST.json](site/IMPORT_MANIFEST.json)
+- فایل‌های HTML مبدأ بدون تغییر: پوشهٔ `site/source-original/`
+- گزارش خودکار لینک‌ها: [LINK_AUDIT.md](docs/LINK_AUDIT.md)
+- اسکریپت دریافت فایل‌های توکار، بازسازی متن‌ها و صفحه‌آرایی: `.github/scripts/`
 
-فهرست همهٔ منابع: https://nimania.github.io/afsharnaderi/legacy-index.html
-
-گزارش تک‌تک مسیرها و SHA-256 نسخه‌های اصلی در فایل [IMPORT_MANIFEST.json](site/IMPORT_MANIFEST.json) نگهداری شده است.
-
-## ساختار
-
-- `site/index.html`: صفحهٔ اصلی بازطراحی‌شده
-- `site/archive.html`: آرشیو منتخب با جست‌وجو
-- `site/legacy-index.html`: آرشیو کامل اسناد و صفحات منتقل‌شده
-- `site/tabaar/`: نمودارهای شجره‌نامه و تصاویر اصلی
-- `site/docs/`: فایل‌های PDF و مدارک
-- `site/ismail/`, `site/davoud2/`, `site/drghan/`, `site/drnader/`: زندگی‌نامه‌ها و منابع
-- `site/source-original/`: فایل خام HTML صفحات اولیه برای حفظ اصالت
-- `.github/scripts/import_archive.py`: دریافت و آرشیو یک‌باره
-- `.github/scripts/postprocess.py`: پاک‌سازی قالب و نمایش نمودار
-- `.github/workflows/pages.yml`: انتشار خودکار GitHub Pages
-
-## باقیمانده
-
-این نسخه یک نمونهٔ عملیاتی است، نه بازسازی تأییدشدهٔ نهایی. بازبینی بصری، کامل‌بودن تمام زیرصفحات، منابع تاریخی، حریم خصوصی اطلاعات اشخاص زنده، جست‌وجوی افراد در شجره‌نامه و نقشهٔ تغییر دامنه هنوز باید انجام شود.
-
-دامنهٔ اصلی دست‌نخورده است. قبل از انتقال DNS، باید همهٔ موارد فوق تأیید شوند.
+## پیش از انتقال دامنه
+این مخزن عمومی است. اطلاعات افراد زنده، حقوق بازنشر تصاویر و اصالت روابط شجره‌نامه باید بررسی شوند. کنترل خودکار لینک‌ها جای بررسی بصری تمام صفحات را نمی‌گیرد. دامنهٔ اصلی و DNS **تغییر نکرده‌اند**.

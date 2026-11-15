@@ -427,6 +427,7 @@ print("HISTORIC_POEMS_RENDERED",poem_count,"standalone poems; full-text index",l
 
 
 # COMPREHENSIVE_CATALOG_V1: rebuild the master catalog after supplementary imports.
+import posixpath
 from pathlib import PurePosixPath
 all_names={
  "index.html":"معرفی اولیهٔ خاندان",

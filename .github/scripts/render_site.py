@@ -262,3 +262,98 @@ if archived.exists():
                  repair_archived_url,original,flags=re.I)
     if fixed!=original:
         archived.write_text(fixed,encoding="utf-8")
+
+
+# FULL_TEXT_INDEX_V1: local, private-to-browser full-text search over historical text.
+from html.parser import HTMLParser as _HTMLParser
+class _ExtractText(_HTMLParser):
+ def __init__(self):
+  super().__init__()
+  self.skip=0
+  self.stack=[]
+  self.bits=[]
+ def handle_starttag(self,tag,attrs):
+  if tag in ("style","script","noscript"):self.skip+=1
+  if tag in ("p","div","h1","h2","h3","li","br","tr"):self.bits.append(" ")
+ def handle_endtag(self,tag):
+  if tag in ("style","script","noscript"):self.skip=max(0,self.skip-1)
+  if tag in ("p","div","h1","h2","h3","li","br","tr"):self.bits.append(" ")
+ def handle_data(self,data):
+  if not self.skip:self.bits.append(data)
+def _text_from_html(source):
+ ex=_ExtractText()
+ ex.feed(source)
+ return re.sub(r"\s+"," "," ".join(ex.bits)).strip()
+
+text_records=[]
+search_targets=people+[("اشعار داود میرزا دوم","davoud2/dpoems.html","اشعار تاریخی"),
+ ("گالری داود میرزا دوم","davoud2/dslide.html","توضیحات آلبوم"),
+ ("اسناد و تألیفات اسماعیل میرزا","ismail/ismail.html","تألیفات ثبت‌شده"),
+ ("مجموعهٔ آثار و خاطرات دکتر غلامرضا","drghan/drghan.html","آثار ثبت‌شده")]
+unique=set()
+for title,key,description in search_targets:
+ if key not in pages or key in unique:continue
+ unique.add(key)
+ original=ROOT/"source-original"/key
+ if not original.exists():continue
+ extracted=_text_from_html(original.read_text(encoding="utf-8",errors="replace"))
+ if not extracted:continue
+ text_records.append({"title":title,"description":description,"path":href(key),"content":extracted[:50000]})
+store("search-index.json",json.dumps(text_records,ensure_ascii=False,separators=(",",":")))
+search_body='''<section class="section container"><div class="heritage-lead"><div><div class="kicker dark">در متن سندها</div><h2>جست‌وجو در تاریخچه‌ها و زندگی‌نامه‌ها</h2><p>بخشی از متن زندگی‌نامه‌ها، اشعار و نوشته‌های موجود در آرشیو اولیه جست‌وجوپذیر شده است. جست‌وجو محلی و بدون ارسال عبارت شما به سرور انجام می‌شود.</p></div></div>
+<label class="search full-search-box"><span aria-hidden="true">⌕</span><input type="search" id="full-search" placeholder="نام، موضوع یا عبارتی از متن..." aria-label="جست‌وجو در متن" autocomplete="off"></label>
+<p class="search-count" id="full-search-count" role="status">برای آغاز، نام یا عبارتی را وارد کنید.</p><div class="archive-grid" id="full-results"></div>
+<div class="editorial"><strong>دامنهٔ جست‌وجو</strong><p>این نمایه از متن عمومی برخی زندگی‌نامه‌ها و مجموعه‌های نوشتاری ساخته شده است. متن PDFها و تصاویر دست‌نویس هنوز وارد جست‌وجوی متنی نشده‌اند. برای مشاهدهٔ همهٔ مدارک از <a href="./archive.html">آرشیو</a> استفاده کنید.</p></div></section>'''
+store("search.html",shell("جست‌وجو در متن","پیدا کردن اشخاص و واژه‌ها در زندگی‌نامه‌ها و اسناد نوشتاری.","جست‌وجوی محلی",search_body,"archive").replace('</body>','<script defer src="./search.js"></script></body>'))
+search_js=r"""(()=>{
+const input=document.getElementById('full-search');
+const status=document.getElementById('full-search-count');
+const results=document.getElementById('full-results');
+if(!input||!status||!results)return;
+const norm=s=>s.normalize('NFKC').replace(/[يى]/g,'ی').replace(/ك/g,'ک').replace(/[\u064b-\u065f]/g,'').toLowerCase();
+let records=[];
+fetch('./search-index.json').then(r=>{if(!r.ok)throw new Error('index unavailable');return r.json()}).then(data=>{records=data;status.textContent='نمایهٔ متنی آماده است؛ عبارت مورد نظر را بنویسید.';if(input.value)show()}).catch(()=>{status.textContent='نمایهٔ متنی در دسترس نیست.'});
+const show=()=>{
+ const q=norm(input.value.trim());
+ results.replaceChildren();
+ if(q.length<2){status.textContent='حداقل دو نویسه برای جست‌وجو وارد کنید.';return}
+ const found=records.map(x=>({...x,hay:norm(x.content)})).filter(x=>norm(x.title+' '+x.content).includes(q)).slice(0,30);
+ status.textContent=found.length+' نتیجه از '+records.length+' پروندهٔ متنی';
+ for(const x of found){
+  const box=document.createElement('article');box.className='resource';
+  const h=document.createElement('h2');h.textContent=x.title;
+  const p=document.createElement('p');
+  const pos=x.hay.indexOf(q);const at=Math.max(0,pos-85);
+  p.textContent=(at?'…':'')+x.content.slice(at,Math.min(x.content.length,at+260))+'…';
+  const a=document.createElement('a');a.href=x.path;a.textContent='مشاهدهٔ متن کامل ←';
+  box.append(h,p,a);results.append(box);
+ }
+};
+input.addEventListener('input',show);
+})();"""
+store("search.js",search_js)
+# The curated archive remains the primary landing; full-text search is additive.
+archive=ROOT/"archive.html"
+v=archive.read_text(encoding="utf-8")
+v=v.replace('<div class="archive-controls">','<p class="fulltext-cta"><a href="./search.html">جست‌وجو در متن زندگی‌نامه‌ها و نوشته‌ها ←</a></p><div class="archive-controls">',1)
+archive.write_text(v,encoding="utf-8")
+home=ROOT/"index.html"
+v=home.read_text(encoding="utf-8")
+if 'href="./search.html"' not in v:
+ v=v.replace('<a href="./gallery.html">گالری</a>','<a href="./gallery.html">گالری</a><a href="./search.html">جست‌وجو</a>',1)
+home.write_text(v,encoding="utf-8")
+css=ROOT/"styles.css"
+v=css.read_text(encoding="utf-8")
+if "/* Text search UI v1 */" not in v:
+ v+="""
+/* Text search UI v1 */
+.fulltext-cta{margin:4px 0 24px;font-size:13px;font-weight:700}
+.fulltext-cta a{color:#765b34;text-decoration:underline;text-underline-offset:5px}
+.full-search-box{background:#fff;border:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:0 18px}
+.full-search-box input{border:0;min-height:64px;width:100%;background:transparent;outline:0}
+.full-search-box span{font-size:27px;color:#a18453}
+.full-search-box:focus-within{border-color:#bc9e68}
+.search-count{font-size:12px;color:#68756f;margin:14px 0 22px}
+"""
+ css.write_text(v,encoding="utf-8")
+print("TEXT_SEARCH_READY:",len(text_records),"archival documents indexed")

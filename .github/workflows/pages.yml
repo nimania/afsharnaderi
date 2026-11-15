@@ -60,3 +60,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Smoke-test published site
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="https://nimania.github.io/afsharnaderi"
+          for path in "" "archive.html" "family.html" "gallery.html" "search.html" "legacy-index.html" "davoud2/dpoems.html" "davoud2/poems/p00.html" "davoud2/dslide.html" "drghan/index.html" "docs/shajareh.pdf" "docs/ismail_memo.pdf" "tabaar/png_18.htm"; do
+            url="${base}/${path}"
+            code="$(curl --location --silent --output /dev/null --write-out '%{http_code}' --retry 4 --retry-delay 2 --retry-all-errors "${url}")"
+            echo "${code}  ${url}"
+            if [ "${code}" != "200" ]; then
+              echo "ERROR: Published URL is not reachable: ${url}"
+              exit 1
+            fi
+          done

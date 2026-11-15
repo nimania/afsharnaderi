@@ -45,7 +45,6 @@
 .legacy-document img[usemap]{max-width:none!important}
 .legacy-document .image-gallery{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px}
 @media(max-width:720px){.legacy-document .iframe-container{min-height:500px}.legacy-document iframe[name="frmDrawing"]{height:66vh;min-height:490px}}
-
 /* Integrated archival views v2 */
 
 /* Integrated archival views v2 */

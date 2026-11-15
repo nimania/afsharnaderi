@@ -1,0 +1,44 @@
+/* Family history book extracted from the verified 34-page PDF */
+.ism-book-intro{margin:38px 0 34px;padding:38px 42px;background:#e7e2d6;border:1px solid #d5c8b4;border-right:5px solid #b69862}
+.ism-book-kicker{font-size:12px;letter-spacing:.02em;color:#80643d;font-weight:700}
+.ism-book-intro h2{font-size:clamp(28px,4vw,45px);font-weight:700;line-height:1.55;margin:8px 0}
+.ism-book-byline{font-size:14px;color:#3c5555;margin:7px 0 18px}
+.ism-book-intro>p:not(.ism-book-byline){font-size:14px;line-height:2.25;color:#445653;max-width:900px}
+.ism-book-actions{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 13px}
+.ism-book-disclaimer{font-size:12px!important;color:#6d766e!important;border-top:1px solid #c8bda9;padding-top:15px;margin-top:24px}
+.ism-document-layout{display:grid;grid-template-columns:243px minmax(0,1fr);gap:23px;align-items:start}
+.ism-chapters{background:#fff;border:1px solid #e1dacd;padding:19px 16px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto}
+.ism-chapters h3{font-size:16px;margin:0 0 16px}
+.ism-chapters nav{display:grid;gap:3px}
+.ism-chapters nav a{display:flex;align-items:baseline;gap:10px;padding:10px 8px;font-size:12px;line-height:1.7;color:#3e5656;border-bottom:1px solid #f0ede5}
+.ism-chapters nav a span{font-family:Georgia,serif;font-size:11px;color:#a28a60;direction:ltr;flex:none}
+.ism-chapters nav a:hover,.ism-chapters nav a:focus-visible{background:#ece8df;color:#6f4e28}
+.ism-chapters-pdf{display:block;margin-top:13px;font-size:12px;color:#816237;font-weight:700;padding:12px 8px}
+.ism-pages{min-width:0}
+.ism-page{background:white;border:1px solid #e4dfd6;margin:0 0 20px;scroll-margin-top:24px}
+.ism-page-top{padding:13px 22px;display:flex;gap:15px;justify-content:space-between;align-items:center;background:#f1eee7;border-bottom:1px solid #e5dfd5;color:#6d746d;font-size:12px}
+.ism-page-top a{color:#82623c;font-weight:700}
+.ism-page-body{padding:25px 31px 18px;line-height:2.3;font-size:15px;color:#303b3b;display:flow-root;overflow-wrap:anywhere}
+.ism-source-heading{font-size:19px;line-height:1.85;font-weight:700;margin:26px 0 14px;color:#263e3d;border-right:3px solid #bfa37a;padding-right:11px}
+.ism-paragraph{line-height:2.2;white-space:normal;margin:0 0 16px;text-align:justify;letter-spacing:0}
+.ism-figure{max-width:100%;padding:12px;border:1px solid #e1ded5;background:#f8f6f0;margin:18px auto 26px;text-align:center}
+.ism-figure img{max-width:100%;height:auto;display:block;margin-inline:auto;object-fit:contain}
+.ism-figure a{display:block}
+.ism-figure figcaption{color:#76817b;font-size:11px;margin-top:10px;line-height:1.6}
+.ism-figure-small{width:min(310px,95%);margin:16px auto 22px}
+.ism-figure-wide{width:min(680px,100%)}
+.ism-footnotes{border-top:1px solid #ece6d9;margin:23px 0 6px;padding-top:12px;display:grid;gap:7px;color:#6a746c;font-size:12px;line-height:1.9}
+.ism-facsimile{border-top:1px solid #e9e2d7;background:#f9f7f2;padding:14px 22px}
+.ism-facsimile summary{cursor:pointer;font-size:12px;font-weight:700;color:#85643b;user-select:none}
+.ism-facsimile img{max-width:100%;width:min(650px,100%);height:auto;margin:19px auto 5px;display:block;box-shadow:0 2px 12px #1b22211f}
+.ism-facsimile p{font-size:11px;color:#738077;margin:10px 0 2px;text-align:center}
+.ism-page-note{font-size:13px;color:#64716d}
+.ism-title-page-note{font-size:16px;text-align:center;font-weight:700;color:#3d4f4b;margin:18px auto}
+.ism-other-works{margin:65px 0 24px;border-top:1px solid #dbd5c8;padding-top:37px}
+.ism-other-works h2{font-size:clamp(24px,3vw,32px);line-height:1.7;margin:0}
+.ism-other-works p{font-size:13px;color:#6d7771}
+.ism-inline-archive-link{font-size:12px;font-weight:700;color:#85653d}
+@media(max-width:980px){.ism-document-layout{grid-template-columns:200px minmax(0,1fr)}.ism-chapters{padding:13px 10px}.ism-page-body{padding:23px}}
+@media(max-width:760px){.ism-book-intro{padding:25px 20px;margin:18px 0 26px}.ism-document-layout{display:block}.ism-chapters{position:static;max-height:none;margin-bottom:20px}.ism-chapters nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 6px}.ism-chapters nav a{font-size:11px}.ism-page-body{padding:19px 17px 10px;font-size:14px}.ism-page-top{padding:12px 15px}.ism-paragraph{text-align:right}.ism-figure-small{width:100%}.ism-source-heading{font-size:17px}}
+@media(max-width:400px){.ism-chapters nav{grid-template-columns:1fr}.ism-book-actions .btn{width:100%}.ism-source-heading{font-size:16px}}
+@media print{.ism-chapters,.ism-facsimile,.ism-book-actions,.source-related,.header,.footer{display:none!important}.ism-document-layout{display:block}.ism-page{border:0;break-inside:avoid-page}.ism-page-body{padding:10px 0}.ism-figure{break-inside:avoid}.ism-book-intro{background:white}}

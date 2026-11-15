@@ -99,3 +99,17 @@
 .full-search-box span{font-size:27px;color:#a18453}
 .full-search-box:focus-within{border-color:#bc9e68}
 .search-count{font-size:12px;color:#68756f;margin:14px 0 22px}
+
+/* Restored historical poems v1 */
+.poem-jump{display:flex;flex-wrap:wrap;gap:8px;margin:25px 0}
+.poem-jump a{border:1px solid #c7b9a3;padding:9px 13px;font-size:12px}
+.poem-card{background:white;border:1px solid #e4ded1;margin:12px 0}
+.poem-card summary{font-size:16px;font-weight:700;padding:18px 23px;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.poem-card summary span{font-size:11px;color:#988773;font-weight:400}
+.poem-card[open] summary{border-bottom:1px solid #eee9df;background:#f4f0e7}
+.poem-intro{font-size:13px;color:#62716b;text-align:center;margin:18px auto;max-width:620px}
+.poem-lines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px;max-width:810px;margin:22px auto;align-items:baseline}
+.poem-lines p{font-size:15px;line-height:2.1;padding:4px;margin:0;text-align:center;min-width:0}
+.poem-standalone{padding:0 20px 20px;text-align:center;font-size:12px;color:#846642}
+.poem-original{overflow-wrap:break-word}
+@media(max-width:600px){.poem-lines{grid-template-columns:1fr;gap:1px}.poem-lines p{font-size:14px}.poem-card summary{padding:15px}}

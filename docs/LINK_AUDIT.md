@@ -1,6 +1,6 @@
 # Link audit
-- HTML pages inspected: 35
-- URLs inspected: 874
+- HTML pages inspected: 36
+- URLs inspected: 894
 - Broken internal URLs: 0
 - Remaining links to previous domain: 0
 

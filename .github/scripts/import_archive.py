@@ -265,7 +265,7 @@ def fix_new_site_links():
 
 
 while queue and len(seen) < MAX_ITEMS and len(pages) < MAX_HTML and total_bytes < MAX_BYTES:
-    url = queue.popleft()
+    url = urljoin(ORIGIN + "/", queue.popleft())
     local = path_for(url)
     if not local or local in seen:
         continue

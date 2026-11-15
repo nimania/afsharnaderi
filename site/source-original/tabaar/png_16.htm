@@ -1,0 +1,156 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+shajareh9911
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 4;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.073819;
+	viewMgr.visBBoxRight = 11.609538;
+	viewMgr.visBBoxBottom = 0.083374;
+	viewMgr.visBBoxTop = 8.154815;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_16.png" ALT="کامل" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="کیوان (کوین) 1991/1/17" origTitle="کیوان (کوین) 1991/1/17" TITLE="کیوان (کوین) 1991/1/17"  target="_top" COORDS="519,545,445,545,445,577,519,577,519,545" onmouseover="UpdateTooltip(this,4,169,event)" onfocus="UpdateTooltip(this,4,169,event)" onclick="return OnShapeClick(4,169,event);" onkeyup="OnShapeKey(4,169,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="شروین 1365/1/26" origTitle="شروین 1365/1/26" TITLE="شروین 1365/1/26"  target="_top" COORDS="519,482,445,482,445,514,519,514,519,482" onmouseover="UpdateTooltip(this,4,146,event)" onfocus="UpdateTooltip(this,4,146,event)" onclick="return OnShapeClick(4,146,event);" onkeyup="OnShapeKey(4,146,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="هومن همسر: عادله مرادوندی" origTitle="هومن همسر: عادله مرادوندی" TITLE="هومن همسر: عادله مرادوندی"  target="_top" COORDS="732,426,623,426,623,460,732,460,732,426" onmouseover="UpdateTooltip(this,4,123,event)" onfocus="UpdateTooltip(this,4,123,event)" onclick="return OnShapeClick(4,123,event);" onkeyup="OnShapeKey(4,123,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="هوتن" origTitle="هوتن" TITLE="هوتن"  target="_top" COORDS="732,478,623,478,623,512,732,512,732,478" onmouseover="UpdateTooltip(this,4,117,event)" onfocus="UpdateTooltip(this,4,117,event)" onclick="return OnShapeClick(4,117,event);" onkeyup="OnShapeKey(4,117,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="یاسمین" origTitle="یاسمین" TITLE="یاسمین"  target="_top" COORDS="732,531,623,531,623,564,732,564,732,531" onmouseover="UpdateTooltip(this,4,111,event)" onfocus="UpdateTooltip(this,4,111,event)" onclick="return OnShapeClick(4,111,event);" onkeyup="OnShapeKey(4,111,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="مینو همسر: هوشانا طایفه جعفری" origTitle="مینو همسر: هوشانا طایفه جعفری" TITLE="مینو همسر: هوشانا طایفه جعفری"  target="_top" COORDS="751,363,610,363,610,396,751,396,751,363" onmouseover="UpdateTooltip(this,4,105,event)" onfocus="UpdateTooltip(this,4,105,event)" onclick="return OnShapeClick(4,105,event);" onkeyup="OnShapeKey(4,105,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="مسعود 1957/1/22 م" origTitle="مسعود 1957/1/22 م" TITLE="مسعود 1957/1/22 م"  target="_top" COORDS="529,363,421,363,421,396,529,396,529,363" onmouseover="UpdateTooltip(this,4,99,event)" onfocus="UpdateTooltip(this,4,99,event)" onclick="return OnShapeClick(4,99,event);" onkeyup="OnShapeKey(4,99,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="اسماعیل" origTitle="اسماعیل" TITLE="اسماعیل"  target="_top" COORDS="731,295,647,295,647,337,731,337,731,295" onmouseover="UpdateTooltip(this,4,92,event)" onfocus="UpdateTooltip(this,4,92,event)" onclick="return OnShapeClick(4,92,event);" onkeyup="OnShapeKey(4,92,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="آرتین" origTitle="آرتین" TITLE="آرتین"  target="_top" COORDS="355,467,271,467,271,500,355,500,355,467" onmouseover="UpdateTooltip(this,4,86,event)" onfocus="UpdateTooltip(this,4,86,event)" onclick="return OnShapeClick(4,86,event);" onkeyup="OnShapeKey(4,86,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="png_1.htm" target="frmDrawing" COORDS="958,35,1014,35,1014,7,958,7,958,35" onmouseover="UpdateTooltip(this,4,44,event)" onfocus="UpdateTooltip(this,4,44,event)" onclick="return OnShapeClick(4,44,event);" onkeyup="OnShapeKey(4,44,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Home page" origTitle="Home page" TITLE="Home page" HREF="png_1.htm" target="frmDrawing" COORDS="16,659,56,659,56,619,16,619,16,659" onmouseover="UpdateTooltip(this,4,43,event)" onfocus="UpdateTooltip(this,4,43,event)" onclick="return OnShapeClick(4,43,event);" onkeyup="OnShapeKey(4,43,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Home page" origTitle="Home page" TITLE="Home page" HREF="png_1.htm" target="frmDrawing" COORDS="44,673,48,673,48,663,26,663,26,673,28,673,28,682,44,682,44,673" onmouseover="UpdateTooltip(this,4,43,event)" onfocus="UpdateTooltip(this,4,43,event)" onclick="return OnShapeClick(4,43,event);" onkeyup="OnShapeKey(4,43,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="مهذب" origTitle="مهذب" TITLE="مهذب" HREF="png_17.htm" target="frmDrawing" COORDS="301,168,297,168,294,168,292,170,290,172,290,175,290,178,292,180,294,181,297,182,325,182,327,181,330,180,331,178,332,175,331,172,330,170,327,168,325,168,320,168,320,168,301,168,301,168" onmouseover="UpdateTooltip(this,4,38,event)" onfocus="UpdateTooltip(this,4,38,event)" onclick="return OnShapeClick(4,38,event);" onkeyup="OnShapeKey(4,38,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="بابک" origTitle="بابک" TITLE="بابک"  target="_top" COORDS="374,386,252,386,252,428,374,428,374,386" onmouseover="UpdateTooltip(this,4,30,event)" onfocus="UpdateTooltip(this,4,30,event)" onclick="return OnShapeClick(4,30,event);" onkeyup="OnShapeKey(4,30,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="فخر طوس همسر :امیر قراباغی" origTitle="فخر طوس همسر :امیر قراباغی" TITLE="فخر طوس همسر :امیر قراباغی"  target="_top" COORDS="583,295,475,295,475,337,583,337,583,295" onmouseover="UpdateTooltip(this,4,11,event)" onfocus="UpdateTooltip(this,4,11,event)" onclick="return OnShapeClick(4,11,event);" onkeyup="OnShapeKey(4,11,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="مهدی همسر :شمسی تهرانچی" origTitle="مهدی همسر :شمسی تهرانچی" TITLE="مهدی همسر :شمسی تهرانچی"  target="_top" COORDS="374,295,252,295,252,347,374,347,374,295" onmouseover="UpdateTooltip(this,4,6,event)" onfocus="UpdateTooltip(this,4,6,event)" onclick="return OnShapeClick(4,6,event);" onkeyup="OnShapeKey(4,6,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="‌دکتر جواد کامل همسر :زمان مهذب" origTitle="‌دکتر جواد کامل همسر :زمان مهذب" TITLE="‌دکتر جواد کامل همسر :زمان مهذب" HREF="png_17.htm" target="frmDrawing" COORDS="464,202,469,201,474,199,478,195,480,190,481,185,481,165,480,160,478,155,474,151,469,149,464,148,367,148,362,149,357,151,353,155,351,160,350,165,350,185,351,190,353,195,357,199,362,201,367,202,464,202" onmouseover="UpdateTooltip(this,4,1,event)" onfocus="UpdateTooltip(this,4,1,event)" onclick="return OnShapeClick(4,1,event);" onkeyup="OnShapeKey(4,1,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

@@ -1,0 +1,46 @@
+html, body {
+    direction: rtl;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+#sher  {
+    direction:rtl;
+    width:auto;
+    justify-content:center ;
+    margin:0 auto;
+    background-color: #F3F3D2 ;
+    display: block;
+    border: 1px solid darkred;
+    border-radius: 10px;
+}
+#sher p {
+    text-align:justify;
+    text-align-last:justify;
+    text-justify:kashida;
+    font:bold 1.1em irans,"B Koodak",tahoma;
+    width:auto;
+    line-height: 0px;
+    font-weight: normal;
+}
+#sher p:nth-child(odd){
+    padding-right:15px;
+    float:right;
+}
+#sher p:nth-child(even){
+    padding-left:15px;
+    float:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    direction: rtl;
+    text-align: center;
+}
+h4 {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 9pt;
+    font-weight: normal;
+    text-align: right;
+    color: #18092E;
+}

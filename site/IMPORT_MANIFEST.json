@@ -1,0 +1,881 @@
+{
+  "source": "https://afsharnaderi.com",
+  "pages": [
+    {
+      "path": "index.html",
+      "title": "Afshar Naderi",
+      "source": "https://afsharnaderi.com/",
+      "original_sha256": "f118e49bbd36b5119beb84558308bf4eeb1ec7f48c5ce36d52c5c74bb22dcc69"
+    },
+    {
+      "path": "tabaar/tabaar1.html",
+      "title": "Afshar",
+      "source": "https://afsharnaderi.com/tabaar/tabaar1.html",
+      "original_sha256": "8d5436aad3b051767f065eaa6ab553e5c9112de9462eda13fbf317d94118005e"
+    },
+    {
+      "path": "docs/kashkoul.html",
+      "title": "تاریخ تولد",
+      "source": "https://afsharnaderi.com/docs/kashkoul.html",
+      "original_sha256": "3e94ea39ca02dd54cf0bff571ab71668b8cfd92e9e431cb6235d81b3d2df5957"
+    },
+    {
+      "path": "ismail/ismail.html",
+      "title": "Ismail Mirza Afshar Naderi",
+      "source": "https://afsharnaderi.com/ismail/ismail.html",
+      "original_sha256": "614cb88c23d96d14df9f03e54a793382cdbd20480f2b09a448ede424bf569ab5"
+    },
+    {
+      "path": "davoud2/davoudm2.html",
+      "title": "داود میرزا",
+      "source": "https://afsharnaderi.com/davoud2/davoudm2.html",
+      "original_sha256": "78a5c1e76328eefcbafcc344336c83a7cbe6bc4ed274af0fcf7627f96436ec9f"
+    },
+    {
+      "path": "drghan/drghan.html",
+      "title": "Dr.Gh.R.Afshar Naderi",
+      "source": "https://afsharnaderi.com/drghan/drghan.html",
+      "original_sha256": "0c8dcf321a01f311f9252b576e5024a5e41571204155e9ea79846af8180defa2"
+    },
+    {
+      "path": "drnader/drnader.html",
+      "title": "Dr. Nader Afshar Naderi",
+      "source": "https://afsharnaderi.com/drnader/drnader.html",
+      "original_sha256": "390a1e8837534d6dee74863abc206436f42c3ce8e578df0b9063ceec71d57d6a"
+    },
+    {
+      "path": "tabaar/png_1.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_1.htm",
+      "original_sha256": "4f731e0bff56af381150cbe7075b9d348163909b160881f16cdabcdcb36a4d75"
+    },
+    {
+      "path": "tabaar/png_2.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_2.htm",
+      "original_sha256": "446de6779985f503f0d289f654b112374bf923aec8963a1948f46ddbc34fb908"
+    },
+    {
+      "path": "tabaar/png_3.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_3.htm",
+      "original_sha256": "126bf206ce75df0ea1e56d8c18ddbceb9b5efad8319ab3033f92c6f4b771f3f0"
+    },
+    {
+      "path": "tabaar/png_4.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_4.htm",
+      "original_sha256": "80338bf7d125dae9ef4a4b70f34bd14080ac68da28fd87584b94b51c04f1b073"
+    },
+    {
+      "path": "tabaar/png_5.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_5.htm",
+      "original_sha256": "f3e27f67d6af3c64ecb3f0b351cef942b119701f9e86db9e7a35325bcf6ca59b"
+    },
+    {
+      "path": "tabaar/png_6.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_6.htm",
+      "original_sha256": "cb06fc66616d6f412355df00ca4efb88dc5e46965cfa6897ed5b0426eea23dbc"
+    },
+    {
+      "path": "tabaar/png_7.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_7.htm",
+      "original_sha256": "b60c8352809b17c8081f25fa5697ce82557acb0f77a7b1d5350a705b5af9200a"
+    },
+    {
+      "path": "tabaar/png_8.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_8.htm",
+      "original_sha256": "e63203a12387690b5b0334c9f7e253138e02fe2ac361bbd592457cdf1f2469ce"
+    },
+    {
+      "path": "tabaar/png_9.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_9.htm",
+      "original_sha256": "3ae476a651bdfe70b3bd0ebf9bd21522bcb76c93b5476605bec2a0815cc7f684"
+    },
+    {
+      "path": "tabaar/png_10.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_10.htm",
+      "original_sha256": "fc25a8e3604a61866a99f5e9773f32c831e40541e0d1b7a0308173fadd8aefc1"
+    },
+    {
+      "path": "tabaar/png_11.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_11.htm",
+      "original_sha256": "251418045439c72088ab143a1fb3c7544c17829653a4575c19f750e6f9808ef3"
+    },
+    {
+      "path": "tabaar/png_12.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_12.htm",
+      "original_sha256": "27e8f0119f57defd3238178e667381baec59efa8da06e834ecba5467943fae60"
+    },
+    {
+      "path": "tabaar/png_13.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_13.htm",
+      "original_sha256": "0e5068b52e17067e921c42c7c4511b3411ea0a0af52c95f0c329d581d40f0d64"
+    },
+    {
+      "path": "tabaar/png_14.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_14.htm",
+      "original_sha256": "c44f1c402647aded5198e15a52aaac964ceb34198a1d36c5ccd18e4e2a7e2b3e"
+    },
+    {
+      "path": "tabaar/png_15.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_15.htm",
+      "original_sha256": "8cea29bbaca954b22a704585588befd018da15dca736b6fe689086fc8de60b20"
+    },
+    {
+      "path": "tabaar/png_16.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_16.htm",
+      "original_sha256": "26b72bddd4796dec80bfda97be817f51b871bb5c7262e8efa34d68fe49aa7d7d"
+    },
+    {
+      "path": "tabaar/png_17.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_17.htm",
+      "original_sha256": "9eade56ed0a7a9dc3ce09c76aef273917b8be17766e55e906e2e0612911e1346"
+    },
+    {
+      "path": "tabaar/png_18.htm",
+      "title": "shajareh9911",
+      "source": "https://afsharnaderi.com/tabaar/png_18.htm",
+      "original_sha256": "9592915efaf678bb8d968def9ad605a9238b9ae41f24f1e5791cd5540cfc1e31"
+    },
+    {
+      "path": "davoud2/dpoems.html",
+      "title": "داود میرزا",
+      "source": "https://afsharnaderi.com/davoud2/dpoems.html",
+      "original_sha256": "a89ada3667a7db5185a3f0b59c7cc8a46260b0f9e1069009e63c012184264524"
+    },
+    {
+      "path": "davoud2/dslide.html",
+      "title": "داود ميرزا",
+      "source": "https://afsharnaderi.com/davoud2/dslide.html",
+      "original_sha256": "6fc4f4af67afa5b7915a9ed8be2c5563d89c283f321226b96ed2ba0988a23b77"
+    },
+    {
+      "path": "drghan/index.html",
+      "title": "آثار دکتر غلامرضا افشار نادری generated by WOWSlider.com",
+      "source": "https://afsharnaderi.com/drghan/index.html",
+      "original_sha256": "4f5768666c32b2c2508c941e55f18e134d958af8fafd3f0b095aa4f5703de055"
+    }
+  ],
+  "assets": [
+    {
+      "path": "docs/shajareh.pdf",
+      "bytes": 3539263,
+      "sha256": "2fb60741f1681791015b7a86e4dc1681f40b07851a8451a9d1e9bd29d95aaa20"
+    },
+    {
+      "path": "docs/ismail_memo.pdf",
+      "bytes": 4540109,
+      "sha256": "4f29bf92d22f38716bf875ee4efe9354a9b7fc0c123cc58a1f19763f0acbb6d3"
+    },
+    {
+      "path": "css/home2.css",
+      "bytes": 2840,
+      "sha256": "20617fc7bff376d00d44620475e8c8f8dfdb28b3351f0c72b26657bf0585046b"
+    },
+    {
+      "path": "fonts/fontface.css",
+      "bytes": 1068,
+      "sha256": "142ab2493102762f4d307940115591c1b74710461720b369eb5956d1902ff9d7"
+    },
+    {
+      "path": "images/IMG_20160229_173700.jpg",
+      "bytes": 595308,
+      "sha256": "44f74b9ced525509b35e0e7cfb683566a7507f988fbfb3d991e4c69830586753"
+    },
+    {
+      "path": "images/davoud-esmail-ammeshahbaji.png",
+      "bytes": 61340,
+      "sha256": "7a366c89a9cf3c05302c6e2c2ea4b8a69ca668e9719508250144de3393de0f6f"
+    },
+    {
+      "path": "images/dav1.png",
+      "bytes": 34047,
+      "sha256": "2647b7b7e54ab3e62b6d68f3f5f7314d5859935a182cfc8e21e59f856f7d77e6"
+    },
+    {
+      "path": "images/esmail-davoud-nader-reza.png",
+      "bytes": 34637,
+      "sha256": "b1d95151b306d3459425dd5258996e6872d7d611b15583b9430e01d490e8aed7"
+    },
+    {
+      "path": "images/ism31.png",
+      "bytes": 25735,
+      "sha256": "8ce177f92e836b614112d70591df8a0556236a666a66906a90d839fd5506201f"
+    },
+    {
+      "path": "images/const.gif",
+      "bytes": 5639,
+      "sha256": "1608db7916c58b4acbf0d9b8245766ed184b5a6f8a9faf94f6231c584e1350f8"
+    },
+    {
+      "path": "tabaar/style1.css",
+      "bytes": 1897,
+      "sha256": "c716dd158692fb759ed83f249080c5f796be8260de86aa89a0c3e33f51c2f2ee"
+    },
+    {
+      "path": "bs4/bootstrap.min.css",
+      "bytes": 140936,
+      "sha256": "7928b5ab63c6e89ee0ee26f5ef201a58c72baf91abb688580a1aa26eb57b3c11"
+    },
+    {
+      "path": "bs4/jquery.min.js",
+      "bytes": 88145,
+      "sha256": "0925e8ad7bd971391a8b1e98be8e87a6971919eb5b60c196485941c3c1df089a"
+    },
+    {
+      "path": "bs4/popper.min.js",
+      "bytes": 21262,
+      "sha256": "03f5c3670a8445c0af75a1b934be176f6c1cde339fbe76b1062cc51e590bca98"
+    },
+    {
+      "path": "bs4/bootstrap.min.js",
+      "bytes": 51039,
+      "sha256": "56c12a125b021d21a69e61d7190cefa168d6c28ce715265cea1b3b0112d169c4"
+    },
+    {
+      "path": "docs/pages/kashkoul1.jpg",
+      "bytes": 442381,
+      "sha256": "91c7c93291d13b04f0f4809047c152b2a97b2edf4acdfccc08135d959c186786"
+    },
+    {
+      "path": "docs/pages/kashkoul2.jpg",
+      "bytes": 349995,
+      "sha256": "1e023b833d30f1deaeacfea52ba4fa21447acd847a831af081e6f2719364f856"
+    },
+    {
+      "path": "docs/pages/kashkoul3.jpg",
+      "bytes": 261310,
+      "sha256": "01721e0df417f85c13beebcae126f72a2709caffb334b15dd822bfa3f9d670fe"
+    },
+    {
+      "path": "docs/pages/kashkoul6.jpg",
+      "bytes": 581591,
+      "sha256": "42fca45f72ac981b990ff3d904ea12b1b7ba314b4dff1bebd7c9b999b4874407"
+    },
+    {
+      "path": "docs/pages/kashkoul4.jpg",
+      "bytes": 307671,
+      "sha256": "3adfdf8c3eaf25842fef710092d1ea9cc4efa5516eb643da2d6fa52d7fb38835"
+    },
+    {
+      "path": "docs/pages/kashkoul5.jpg",
+      "bytes": 418591,
+      "sha256": "40d33f9789c78457be639091c50102f0c76e501f42ef51abfe5338c857ceb438"
+    },
+    {
+      "path": "bs4/jquery.js",
+      "bytes": 95785,
+      "sha256": "24262baafef17092927c3dafe764aaa52a2a371b83ed2249cca7e414df99fac1"
+    },
+    {
+      "path": "ismail/books/نقشه_تلگراف1-m.jpg",
+      "bytes": 125890,
+      "sha256": "3fee0ba2a0aa6dff0be257bc1a0827c3a1dc6786d1cc3fb88b5821acf2766367"
+    },
+    {
+      "path": "ismail/books/نقشه_تلگراف2-m.jpg",
+      "bytes": 108466,
+      "sha256": "09294e107c2267ac6ff58ee6c1ad9c644a0a186bfb00bc52ba35837700e39f62"
+    },
+    {
+      "path": "ismail/books/نقشه_تلگراف3-m.jpg",
+      "bytes": 97160,
+      "sha256": "358251c814a001c3a2e97e0921a64c4fe4990b583ad9c7811280679004fb9c52"
+    },
+    {
+      "path": "ismail/books/نقشه_تلگراف4-m.jpg",
+      "bytes": 89133,
+      "sha256": "aae6e8f0549adb846d0423af304921959ea93b846242034e649347a33cf0a0cd"
+    },
+    {
+      "path": "ismail/books/نقشه_تلگراف5-m.jpg",
+      "bytes": 107881,
+      "sha256": "905c507390495c3ae256222383fd3705aeca2e4f4b3e7ac8d35688f59d500323"
+    },
+    {
+      "path": "ismail/books/نقشه_تلگراف6-m.jpg",
+      "bytes": 100543,
+      "sha256": "565336f261a6c36e436ff7ef5ab54da124056a7f0af8b2b9f2cd964c23328cdd"
+    },
+    {
+      "path": "ismail/books/تلگراف1-m.jpg",
+      "bytes": 75348,
+      "sha256": "7afaad4d079ca8218bd5e46978a474b6d350122ed05ab833b7a871aba9b1b273"
+    },
+    {
+      "path": "ismail/books/تلگراف2-m.jpg",
+      "bytes": 95370,
+      "sha256": "2a1dfe0601a37f961a19a022270ac3a42fce47f22632d5d41dcb9ce045ac85b5"
+    },
+    {
+      "path": "ismail/books/تلگراف3-m.jpg",
+      "bytes": 129598,
+      "sha256": "7c31c7ab23e7d22e8230052c755738cefb042fcb5df7f108c4be989f7a6b71e9"
+    },
+    {
+      "path": "ismail/books/تلگراف4-m.jpg",
+      "bytes": 86596,
+      "sha256": "4f13712f2f5900e610feea5bc9bf6f23d2d90b64eabadcfbb7075fc5539f03fc"
+    },
+    {
+      "path": "ismail/books/نتيجه2-1-m.jpg",
+      "bytes": 84404,
+      "sha256": "e80a7ec9add9abda635760ea1d5891b6548a789db36cae69696dd53fb117d9be"
+    },
+    {
+      "path": "ismail/books/نتيجه2-2-m.jpg",
+      "bytes": 68123,
+      "sha256": "c2e7b49422d712dd99608ae2b11bfe484ef3446163af73a09de6512da041563f"
+    },
+    {
+      "path": "ismail/books/نادرشاه-1-m.jpg",
+      "bytes": 72984,
+      "sha256": "b0c227ce7c9e23fe2a0ceb53f2a95198bc2973c22934a19d2bfb0145b61be549"
+    },
+    {
+      "path": "ismail/books/نادرشاه-2-m.jpg",
+      "bytes": 79240,
+      "sha256": "b0451c475bcd9863479651261c823f1fc8598d16cf2f751dfc5bca3cd97dbb11"
+    },
+    {
+      "path": "ismail/books/نادرشاه-386-m.jpg",
+      "bytes": 75591,
+      "sha256": "3ba2054f666fcd3cc3333baf8c421fe374e5c51166215b3193f06830557e8140"
+    },
+    {
+      "path": "ismail/books/نادرشاه-هرات-m.jpg",
+      "bytes": 102560,
+      "sha256": "f5c44845cb71a8d9af52250bfc657e8603a274d289f8b73ab68e50e744cc4e95"
+    },
+    {
+      "path": "davoud2/photos/001_davoud-1336.jpg",
+      "bytes": 78326,
+      "sha256": "6305f0d31c35ec3ee81887a39e9164bc0f6897353b848420ce03f8fddb1fbdd1"
+    },
+    {
+      "path": "drghan/ghan.css",
+      "bytes": 1757,
+      "sha256": "675d7f0cdc1b34411314f0c03534592fb57c8fda80b8a7b7670597c458512169"
+    },
+    {
+      "path": "drghan/images/vorood.jpg",
+      "bytes": 42456,
+      "sha256": "17faa4b8bdadcf3e147d5ec56e439091efed68d641376c4984c841e02eba544d"
+    },
+    {
+      "path": "drghan/images/dr.gh.a.n.jpg",
+      "bytes": 6617,
+      "sha256": "6e1e21fec62d0926f6c5e57b74cbad8005bb64e2118b12e4967de141e8674466"
+    },
+    {
+      "path": "drghan/images/dr.gh.a.n-mashad-clinic.jpg",
+      "bytes": 14296,
+      "sha256": "f15fd7280b3959643e0eecff8ec9559027d871edb856f90fde92f66dcdff5698"
+    },
+    {
+      "path": "drghan/images/dr.gh.a.n-mashad-clinic-1330.jpg",
+      "bytes": 15431,
+      "sha256": "ac7af94ada4ea0b4e76eee600e06fb8eb08a778fa74c1f8a35015fd12673d464"
+    },
+    {
+      "path": "drghan/images/sage4-1024.jpg",
+      "bytes": 376218,
+      "sha256": "8e58a6733ae30aa520c544f69ee66532e223667648a0697d5f3351b089bb8920"
+    },
+    {
+      "path": "drghan/images/drafshar-pitie-paris-tv-s.jpg",
+      "bytes": 54201,
+      "sha256": "240eb4c55716b91e6ce7caab374ccf4b99a740c6c39a348ef30ccd21b875ba33"
+    },
+    {
+      "path": "drghan/images/peyvand1.jpg",
+      "bytes": 39745,
+      "sha256": "48de84fa1dd8edd76b8872d73f320a3ce85474ad1df993e702d711be337cb376"
+    },
+    {
+      "path": "drnader/images/NADER1-S.JPG",
+      "bytes": 17626,
+      "sha256": "9048fd0511a296bbcbc8ed9b23fb0901e7c778a8acb6c1fc7bfcdf468b6255c3"
+    },
+    {
+      "path": "drnader/images/NADER2.JPG",
+      "bytes": 147149,
+      "sha256": "9943d29c4df639520b7312eb67ab083433e775f31a20eeb6a863fe9a692f2f02"
+    },
+    {
+      "path": "drnader/images/nader1341.jpg",
+      "bytes": 418926,
+      "sha256": "e8e69d6e0a1cb6ac7497429c9eda61aa57b2997fab521cdca873af1705c5cd8e"
+    },
+    {
+      "path": "drnader/images/nader-13270106-tabriz-baghegolestan-m.JPG",
+      "bytes": 44699,
+      "sha256": "45863ac5a0207aec5d94ec08accff7b632a66310a95b833593b1156414e29f83"
+    },
+    {
+      "path": "drnader/images/nader-ashayer.jpg",
+      "bytes": 738962,
+      "sha256": "a7b60b3cae1f7922d1ba5158f7cb6c982dfaa2eaa956922fb855719053a66a45"
+    },
+    {
+      "path": "drnader/images/monography.jpg",
+      "bytes": 63335,
+      "sha256": "153932d8f1a520ad7951824f96eb580ae67b9bfe07513d9733c49ad63154cfda"
+    },
+    {
+      "path": "drnader/images/armanshahr-m.jpg",
+      "bytes": 65674,
+      "sha256": "b8ce544c87972a943c71c8c088b678d15ce6195268f7b9862e726ee8d884c2b1"
+    },
+    {
+      "path": "drnader/images/naderfoot.jpg",
+      "bytes": 17179,
+      "sha256": "77415b37ea50d853bba09aee36ad1b1271451c92474eab962d00be0a5dc72a2f"
+    },
+    {
+      "path": "drnader/images/nader1325-football-m.jpg",
+      "bytes": 99327,
+      "sha256": "9b01ef447de7c597fe1d5907fc41e1bf7e92218d2d2182d12d4ba685bcbacd5e"
+    },
+    {
+      "path": "drnader/images/team.jpg",
+      "bytes": 31250,
+      "sha256": "6652b60be427c9b3343ae2af12c85975d3d576e91287726fd0e051af90d6d29e"
+    },
+    {
+      "path": "drnader/images/nader-capitan-m.jpg",
+      "bytes": 100622,
+      "sha256": "489f8ade923bf4dd7266d1c814f52f3613292b832545efa2774ffa18f7cc7d59"
+    },
+    {
+      "path": "tabaar/visio.css",
+      "bytes": 3450,
+      "sha256": "7105e502b55922368e8c5daf8bb53ebc63c7d008f08bfc5d00f8be36e607ca21"
+    },
+    {
+      "path": "tabaar/png_1.js",
+      "bytes": 2069,
+      "sha256": "05d7cd014994555b9d6d588eb2c6416822a5f7656932a8725379fe26b83d8a51"
+    },
+    {
+      "path": "tabaar/png_1.png",
+      "bytes": 218616,
+      "sha256": "4dc671540afa79dd1a2268da454b7a74f5d57318b3ed6303791f8530658d134b"
+    },
+    {
+      "path": "tabaar/png_2.png",
+      "bytes": 988301,
+      "sha256": "e79d09a2a5803dcaa7d2600f76d807eed5cbcaf423bae8ade854f42ace6343d7"
+    },
+    {
+      "path": "tabaar/png_3.png",
+      "bytes": 1153166,
+      "sha256": "06fff1c2798971ed5536112a8af5a321a01fcc51d24604d4f879fba09c5d56a1"
+    },
+    {
+      "path": "tabaar/png_4.png",
+      "bytes": 643752,
+      "sha256": "cc5e3c5cd6cb47c33e59ec211d9d0587347420e2965907d9340146cc6f85ffac"
+    },
+    {
+      "path": "tabaar/png_5.png",
+      "bytes": 547759,
+      "sha256": "80845911e09f471b7d3666d2fd492f826f04346bc54d2b4c526c15bc3313852f"
+    },
+    {
+      "path": "tabaar/png_6.png",
+      "bytes": 227254,
+      "sha256": "d7358029cf014eeacbfc4c793e0bcc02b4d15365fcdb3f1eb37f7c7e6b8d2ea2"
+    },
+    {
+      "path": "tabaar/png_7.png",
+      "bytes": 74415,
+      "sha256": "51f69f1646cae26e5d3a3a80c672b317aba89d861cd412021671be379c1e1405"
+    },
+    {
+      "path": "tabaar/png_8.png",
+      "bytes": 427091,
+      "sha256": "0504e7df27ae42bb942e57362777057f3c4a81ebf09f329392571c005163c659"
+    },
+    {
+      "path": "tabaar/png_9.png",
+      "bytes": 322029,
+      "sha256": "dd981f67684cb8978d35ccdaac00ab05c805fb52ed1478bc97c4dd3d45efeb02"
+    },
+    {
+      "path": "tabaar/png_10.png",
+      "bytes": 69235,
+      "sha256": "79a08ec9f354e140008c294091b47fb5cf67f4692bfc5d27779441f457290250"
+    },
+    {
+      "path": "tabaar/png_11.png",
+      "bytes": 178288,
+      "sha256": "bf97166e9aacaaf1f2a5b8c0657e6edc55e3bd5f98d7cb22589b56caba7196e9"
+    },
+    {
+      "path": "tabaar/png_12.png",
+      "bytes": 473916,
+      "sha256": "8c0c0f2e6755c87567c0d86f700b4e385880ec6651c5d8f1a6892d7fcb84223a"
+    },
+    {
+      "path": "tabaar/png_13.png",
+      "bytes": 126884,
+      "sha256": "5a08219089e5abbac6bc655ebabe4243213fb9b412a92c6b15074b8b7e62dac1"
+    },
+    {
+      "path": "tabaar/png_14.png",
+      "bytes": 441702,
+      "sha256": "e0d685e4a49a08efb4c22f031ac874258cb907bbb05d76a623553106651072b0"
+    },
+    {
+      "path": "tabaar/png_15.png",
+      "bytes": 289321,
+      "sha256": "b68502e6276869cefd242e8d9e40e058e2209c87e68907e7a4938236505c02d5"
+    },
+    {
+      "path": "tabaar/png_16.png",
+      "bytes": 178080,
+      "sha256": "31ea1489c7503fdc307aca3c05531f1c37e6af475eea37fd09185b1530210cdc"
+    },
+    {
+      "path": "tabaar/png_17.png",
+      "bytes": 262146,
+      "sha256": "bf5eceb109aa060aeda41a36e17d12140f2e45f7a7699e19265370af1fd6fdf0"
+    },
+    {
+      "path": "tabaar/png_18.png",
+      "bytes": 178658,
+      "sha256": "091fb7643f43298c1ec02a9cdd65e2c031478df9a32d0ceba1fc9010cfb31e00"
+    },
+    {
+      "path": "davoud2/poems/sher.css",
+      "bytes": 884,
+      "sha256": "4eac8ba492a7570ac3f3b75779512ad0f6f0cffa2b1bd7441fada12c8c17e05c"
+    },
+    {
+      "path": "davoud2/poems/dpoem.css",
+      "bytes": 825,
+      "sha256": "ef801b759144d8c7eb9e86fc3a5b57c739779467a35836245515de05741a699c"
+    },
+    {
+      "path": "w3/w3.css",
+      "bytes": 23361,
+      "sha256": "dd3075bed4a18c7ba411fc6dc2bd2c72de1be1f35c0094c867b18a060e07f09a"
+    },
+    {
+      "path": "w3/w3.js",
+      "bytes": 12381,
+      "sha256": "4b46cb03161f5ced75e5b21f556a6d7f6a93c01e09bc289e09de0b1a6bd85bd3"
+    },
+    {
+      "path": "davoud2/poems/dpoem.js",
+      "bytes": 653,
+      "sha256": "d02fbd6859edb6999f000d8f57f8a1393713810f930fdd7b669657009ef41937"
+    },
+    {
+      "path": "davoud2/photos/002_davoud.jpg",
+      "bytes": 90126,
+      "sha256": "07ad7ee6f965c9a7b4c00830351ee30dee545850460403543f616294c7e59626"
+    },
+    {
+      "path": "davoud2/photos/003_davoud.jpg",
+      "bytes": 97646,
+      "sha256": "ba433ee5764797f101b5b3cc05a33575c73500d68d5b486fcbae905062585fd3"
+    },
+    {
+      "path": "davoud2/photos/004_davoud-telegraph.jpg",
+      "bytes": 85720,
+      "sha256": "2a62e8ee1b759e04d2bc6af98ff071ff9afcf152bd2c553c745051a266b92ef2"
+    },
+    {
+      "path": "davoud2/photos/005_davoud.jpg",
+      "bytes": 95653,
+      "sha256": "28ff8c7a10fab95c279176cd0fbe82da8089116c6ceb6c424f446101167749af"
+    },
+    {
+      "path": "davoud2/photos/006_8afshar.jpg",
+      "bytes": 86364,
+      "sha256": "fb9ff46c06b622eef130d7a89f4f550ebf588d7f70a2915f5bdcc6fbfd5ea478"
+    },
+    {
+      "path": "davoud2/photos/007_13.26.14.jpg",
+      "bytes": 54408,
+      "sha256": "9b27d4ffdeeb26736d71f0ef4edb16643c704416bc98aff7d34169469cc80667"
+    },
+    {
+      "path": "davoud2/photos/008_davoud.jpg",
+      "bytes": 143538,
+      "sha256": "8835e2c37af1e3eb019ef664e0a82e3aad0d5f212b7f1874f59f8b20dd283281"
+    },
+    {
+      "path": "davoud2/photos/009_davoud.jpg",
+      "bytes": 77865,
+      "sha256": "e1fe821201cfcda060fc4acf235326d3fd848474a591dae4c4e078a0069733db"
+    },
+    {
+      "path": "davoud2/photos/010_davoud.jpg",
+      "bytes": 80546,
+      "sha256": "d552fb5f0dc06b6ed1f443a5e17eea9e4e8b61b245844909a893df8d421f3e34"
+    },
+    {
+      "path": "davoud2/photos/011_davoud.gif",
+      "bytes": 70037,
+      "sha256": "7dcf7cb2b89d395979208a57dd9b2a6134881fc0ad72b2aaaa0c33b471b50a7c"
+    },
+    {
+      "path": "davoud2/photos/012_davoud.jpg",
+      "bytes": 77627,
+      "sha256": "59c66fc64cba58d223d6d21faf9e717880398f9daa1d4ad85d95d7bc9e9c3d7f"
+    },
+    {
+      "path": "davoud2/photos/013_davoud-1303.jpg",
+      "bytes": 73903,
+      "sha256": "4e20c34a88e81356c0e36724cfad00a8b7a628022c2904bf65855de2fd692fa3"
+    },
+    {
+      "path": "drghan/engine1/style.css",
+      "bytes": 8249,
+      "sha256": "bdc5bb1733ffe41a6efdff6d7747ced2eb623072a823c57fc71d49b6589e2e73"
+    },
+    {
+      "path": "drghan/engine1/jquery.js",
+      "bytes": 93637,
+      "sha256": "ba6eda7945ab8d7e57b34cc5a3dd292fa2e4c60a5ced79236ecf1a9e0f0c2d32"
+    },
+    {
+      "path": "drghan/data1/images/00ensan.jpg",
+      "bytes": 27856,
+      "sha256": "55404b75cb92ef786fc0098cda70a8617e4cf11b156f14b4b4477559d3b3d403"
+    },
+    {
+      "path": "drghan/data1/images/01dibacheh.jpg",
+      "bytes": 46911,
+      "sha256": "451b60c5acc8b97acb8bfb2a1d2ad390b444baedfc6503c14aa9d43c77bb2d37"
+    },
+    {
+      "path": "drghan/data1/images/01taftish.jpg",
+      "bytes": 44625,
+      "sha256": "8a18a1f5de42b149c1acab6910a0d57375e96df1db2452eab295228f3266cbf0"
+    },
+    {
+      "path": "drghan/data1/images/02dard.jpg",
+      "bytes": 18511,
+      "sha256": "9fba2757d75318375a920da6db3bf21418f12311ced5df35b87d000eaa04c9ca"
+    },
+    {
+      "path": "drghan/data1/images/03jarahi.jpg",
+      "bytes": 27232,
+      "sha256": "e8a40e80e352a229f57957088adbfde98210861aed7716670d737814814e9920"
+    },
+    {
+      "path": "drghan/data1/images/04keshvarha.jpg",
+      "bytes": 33044,
+      "sha256": "791c3401b257f06ccaa06df37ee2a2fa21186282d3b3630fa5dda48ddcfb3a12"
+    },
+    {
+      "path": "drghan/data1/images/05seresht.jpg",
+      "bytes": 37611,
+      "sha256": "3929490b90edf8cce4fe81d2698c53d5f59e3abe9c6762c99d2f259751702a7c"
+    },
+    {
+      "path": "drghan/data1/images/06chehreh.jpg",
+      "bytes": 40967,
+      "sha256": "1156ddc9f337f8ee6971ea804bcdd76754b68fed5a0883e457413aa0c6d04bb1"
+    },
+    {
+      "path": "drghan/data1/images/07rythm.jpg",
+      "bytes": 16434,
+      "sha256": "69da894983582cfecf909e20b518be52a1a2a025736dba9909170719ab43e280"
+    },
+    {
+      "path": "drghan/data1/images/08marz1.jpg",
+      "bytes": 35157,
+      "sha256": "a23a26c197ca4661303c1a4837ca0e654af19419b0f38063e2548a098690c300"
+    },
+    {
+      "path": "drghan/data1/images/09khaab.jpg",
+      "bytes": 39277,
+      "sha256": "36705bad038b7cb0b9c97f0af5e0ef4198b6d657b9e86dc140270dc59e6c4c84"
+    },
+    {
+      "path": "drghan/data1/images/10allergy.jpg",
+      "bytes": 31602,
+      "sha256": "4e21fc5b92b30f8331d41114cfa19d42d531bf196564f5da94b079ef23c14022"
+    },
+    {
+      "path": "drghan/data1/images/11nader.jpg",
+      "bytes": 45020,
+      "sha256": "99445a55a85a9d10542c6a16a5aa5658506b5e463338d8d6bd27bea95a0eb826"
+    },
+    {
+      "path": "drghan/data1/images/12noghat.jpg",
+      "bytes": 30951,
+      "sha256": "a9fc53c558f92f3a4f0e87679b2205de8d05135298377a3c5aa2cf41238485f0"
+    },
+    {
+      "path": "drghan/data1/images/13jangha.jpg",
+      "bytes": 41144,
+      "sha256": "678de9ed1172be293d9cd33b1482abb4112acdf7491a9ab2bd44bc48b174fb74"
+    },
+    {
+      "path": "drghan/data1/images/14yekiboud.jpg",
+      "bytes": 51139,
+      "sha256": "932d4c09dfec95ef71b87fe54a46f7da7fbbb48e415858b1c862bc028b39d6f8"
+    },
+    {
+      "path": "drghan/data1/images/15safavi.jpg",
+      "bytes": 33921,
+      "sha256": "cc5c61c960c85be0c864f2320369af417cdc6ba4d60bbf07fe2dc6e47ccc7c80"
+    },
+    {
+      "path": "drghan/data1/images/16malasiat.jpg",
+      "bytes": 34092,
+      "sha256": "f9a48f3aa7442dc6abbcf32bf33741b4fdeb57946d88f6a973e99e9d9d04029a"
+    },
+    {
+      "path": "drghan/data1/tooltips/00ensan.jpg",
+      "bytes": 1333,
+      "sha256": "89ba0b3a7551690575675a1e0ff74820dbf8aad81551e7a646d4319de3906e16"
+    },
+    {
+      "path": "drghan/data1/tooltips/01dibacheh.jpg",
+      "bytes": 1302,
+      "sha256": "7801bf1a7caac3c725b66993f6593c47ab56f08daec317ea8b35d64506282eb4"
+    },
+    {
+      "path": "drghan/data1/tooltips/01taftish.jpg",
+      "bytes": 1350,
+      "sha256": "bf80bbf88bf90a4af8b8649ac88b2746afa33aef8f50517ce1d7d9ea3e1f0f53"
+    },
+    {
+      "path": "drghan/data1/tooltips/02dard.jpg",
+      "bytes": 1252,
+      "sha256": "d82e415578cb115d716ad5551dff103cc9050ceeb611405e52b4d81a952429d6"
+    },
+    {
+      "path": "drghan/data1/tooltips/03jarahi.jpg",
+      "bytes": 1198,
+      "sha256": "ac6ba2ca4d9e86048d50ab04e513f32d04c7f272bc84525bae64327574347ab6"
+    },
+    {
+      "path": "drghan/data1/tooltips/04keshvarha.jpg",
+      "bytes": 1406,
+      "sha256": "4eaa0355d624d1f0efcf785c93bbea982f996df09619e5505c5cd1970413ff7a"
+    },
+    {
+      "path": "drghan/data1/tooltips/05seresht.jpg",
+      "bytes": 1638,
+      "sha256": "695f35a3cb24e9cf9f6b9c10c69289c5d225430dcc36e587cd40c895f885606e"
+    },
+    {
+      "path": "drghan/data1/tooltips/06chehreh.jpg",
+      "bytes": 1839,
+      "sha256": "089faed0206c8fa5c0cb56220e219d09c934ece17de02286b4d62d769f044922"
+    },
+    {
+      "path": "drghan/data1/tooltips/07rythm.jpg",
+      "bytes": 1224,
+      "sha256": "32cd4a68f5753756c95ec595a71d11e5e9e4ca503dccc92b375f9543a4a8f90a"
+    },
+    {
+      "path": "drghan/data1/tooltips/08marz1.jpg",
+      "bytes": 1594,
+      "sha256": "b20ea0aed1913504b94534d6f6fe1fef041ecdbdba8f4cd076517cb0b76144cc"
+    },
+    {
+      "path": "drghan/data1/tooltips/09khaab.jpg",
+      "bytes": 1498,
+      "sha256": "a83c53e83282c6fc816d7329de60e17e8b7869154cb141b1bd712bd8853b7333"
+    },
+    {
+      "path": "drghan/data1/tooltips/10allergy.jpg",
+      "bytes": 1301,
+      "sha256": "0e734a9c8467e2e528e1e7f518199d012b057ac9b0f373da5b7b432e62735c8b"
+    },
+    {
+      "path": "drghan/data1/tooltips/11nader.jpg",
+      "bytes": 1652,
+      "sha256": "c3508dd91a2ae93e4af48f2e123807fcf74dcd073e862940bde239b3830acb3a"
+    },
+    {
+      "path": "drghan/data1/tooltips/12noghat.jpg",
+      "bytes": 1210,
+      "sha256": "f82384082baf2a7699f0f1122350ac959bea1ee9e83deb2112fb4531be2a4e02"
+    },
+    {
+      "path": "drghan/data1/tooltips/13jangha.jpg",
+      "bytes": 1431,
+      "sha256": "250d91daf8ac9a9d2f454443b8b6b6819c0734f03349d53ad2c9e4b30e722c3a"
+    },
+    {
+      "path": "drghan/data1/tooltips/14yekiboud.jpg",
+      "bytes": 1495,
+      "sha256": "1172c06e505eff1d3579360425d15bbf975943f1871eff1e21a2cdd89373892a"
+    },
+    {
+      "path": "drghan/data1/tooltips/15safavi.jpg",
+      "bytes": 1463,
+      "sha256": "48cc0d7c56e275bb29a5134e98d9ea13bce41a626280c125cd2be92e950b9906"
+    },
+    {
+      "path": "drghan/data1/tooltips/16malasiat.jpg",
+      "bytes": 1450,
+      "sha256": "98c0b40eede54b6a5fe03d1a4acd72ab668e77068908c335aa8d88a508abe081"
+    },
+    {
+      "path": "drghan/engine1/wowslider.js",
+      "bytes": 12816,
+      "sha256": "ef954a5eef28b3dc3c3d7be973664a3b98997624e502ec1a327c915bf746c3cf"
+    },
+    {
+      "path": "drghan/engine1/script.js",
+      "bytes": 2242,
+      "sha256": "80da3af3ba641c33afbd3beb2205d588bf12e379575097ca2ffe2e3e775944b5"
+    },
+    {
+      "path": "drghan/engine1/bullet.png",
+      "bytes": 1535,
+      "sha256": "7111d93b8f95620878f2fea206825cfa5d25ce7cbe48dfe144f65a424a3d3f46"
+    },
+    {
+      "path": "drghan/engine1/arrows.png",
+      "bytes": 5528,
+      "sha256": "d45d79ffb3e6691266fe1ee78444294a8d6aeb4dc9fa5c329257a653895e41c7"
+    },
+    {
+      "path": "drghan/engine1/bg.png",
+      "bytes": 4304,
+      "sha256": "ad7afbb56a48c6595769a1d78d45ccae7614e34ba216c0a20096781d60ef397e"
+    },
+    {
+      "path": "drghan/engine1/triangle.png",
+      "bytes": 313,
+      "sha256": "6fc18bc0dfc9519c0e4683108272b10865c3a79a95a341e1bd02ec930909a757"
+    }
+  ],
+  "missing": [
+    {
+      "path": "bs4/bootstrap-theme.min.css",
+      "error": "404 Client Error: Not Found for url: https://afsharnaderi.com/bs4/bootstrap-theme.min.css"
+    },
+    {
+      "path": "davoud2/davoud2.css",
+      "error": "404 Client Error: Not Found for url: https://afsharnaderi.com/davoud2/davoud2.css"
+    }
+  ],
+  "download_bytes": 24432839
+}

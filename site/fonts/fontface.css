@@ -1,0 +1,30 @@
+﻿@font-face {
+    font-family: "lalezar";
+    src: url('Lalezar-Regular.eot?#') format('eot'),
+         url('Lalezar-Regular.ttf')   format('ttf'),
+         url('Lalezar-Regular.woff')  format('woff');
+}
+@font-face {
+    font-family: "irans";
+    src: url('irsans.eot?#') format('eot'),
+         url('irsans.ttf')   format('ttf'),
+         url('irsans.woff')  format('woff');
+}
+@font-face {
+    font-family: "iransb";
+    src: url('irsansb.eot?#') format('eot'),
+         url('irsansb.ttf')   format('ttf'),
+         url('irsansb.woff')  format('woff');
+}
+@font-face {
+    font-family: 'koodak';
+    src: url('BKoodakBold.eot?#') format('eot'),  /* IE6–8 */
+         url('BKoodakBold.woff')  format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('BKoodakBold.ttf')   format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: "soraya";
+    src: url('soraya.eot?#') format('eot'),   /* IE6–8 */
+         url('soraya.ttf')   format('ttf'),
+         url('soraya.woff')  format('woff');
+}

@@ -244,3 +244,21 @@ chart_js=r"""
 """
 js.write_text(original+"\n"+mark+"\n"+chart_js,encoding="utf-8")
 print(f"ARCHIVE_RENDER_OK: {len(pages)} pages, {len(assets)} assets, {len(sections)} gallery collections, {len(cards)} curated records")
+
+
+# Preserve the archived original homepage under /original/index.html while
+# making all its same-site relative links resolve from the nested directory.
+archived=ROOT/"original/index.html"
+if archived.exists():
+    original=archived.read_text(encoding="utf-8")
+    def repair_archived_url(match):
+        start,value,end=match.groups()
+        lower=value.lower()
+        if not value or lower.startswith(("../","./../","http:","https:","//","#","mailto:","tel:","data:","javascript:")):
+            return match.group(0)
+        # Every link in the archived homepage originally resolved from /.
+        return start+"../"+value+end
+    fixed=re.sub(r'((?:href|src|poster|data-src)=["\x27])([^"\x27]+)(["\x27])',
+                 repair_archived_url,original,flags=re.I)
+    if fixed!=original:
+        archived.write_text(fixed,encoding="utf-8")

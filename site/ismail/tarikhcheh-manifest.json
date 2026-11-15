@@ -1,0 +1,68 @@
+{
+  "source_pdf_path": "site/docs/ismail_memo.pdf",
+  "source_sha256": "4f29bf92d22f38716bf875ee4efe9354a9b7fc0c123cc58a1f19763f0acbb6d3",
+  "page_count": 34,
+  "total_words_extracted_approx": 15668,
+  "text_characters_extracted": 70945,
+  "original_images_extracted": 36,
+  "facsimile_page_images": 34,
+  "chapters": [
+    {
+      "title": "توضیحات ویراستار",
+      "page": 3
+    },
+    {
+      "title": "مقدمهٔ اسماعیل میرزا",
+      "page": 4
+    },
+    {
+      "title": "چگونگی ایل افشاریه",
+      "page": 6
+    },
+    {
+      "title": "احوالات نادر قلی بیک افشار",
+      "page": 6
+    },
+    {
+      "title": "احوالات امام قلی بیک افشار",
+      "page": 6
+    },
+    {
+      "title": "احوالات نادرشاه افشار",
+      "page": 7
+    },
+    {
+      "title": "احوالات رضا قلی میرزا",
+      "page": 8
+    },
+    {
+      "title": "احوالات شاهرخ‌شاه افشار",
+      "page": 8
+    },
+    {
+      "title": "احوالات امام قلی میرزا افشار",
+      "page": 9
+    },
+    {
+      "title": "احوالات اسماعیل میرزای اول",
+      "page": 9
+    },
+    {
+      "title": "احوالات داود میرزای اول",
+      "page": 10
+    },
+    {
+      "title": "داود میرزا پس از تولد اسماعیل میرزا",
+      "page": 13
+    },
+    {
+      "title": "احوالات اسماعیل میرزا، نویسنده",
+      "page": 19
+    },
+    {
+      "title": "وصیت‌نامه و اسناد پایانی",
+      "page": 33
+    }
+  ],
+  "notes": "Native HTML text is machine extracted from the PDF text layer. PDF is authoritative."
+}
